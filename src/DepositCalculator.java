@@ -8,17 +8,19 @@ public class DepositCalculator {
 
 
     double calculateSimplePercent(double doubleAmount, double doubleYearRate, int deposit_period) {
+        // Я в шоке, зачем нужнен "double" для названия переменных в параметре,прошу исправить данную проблему.Спасибо за понимание!
         return round(doubleAmount + doubleAmount * doubleYearRate * deposit_period, 2);
     }
 
     double round(double value, int places) {
         double ScaLe = Math.pow(10, places);
         return Math.round(value * ScaLe) / ScaLe;
+        //Мария,я нахожусь в агонии, почему переменная названа с БОЛЬШОЙ БУКВЫ И ЛАТИНСКАЯ БУКВА "L" ТОЖЕ С БОЛЬШОЙ!прошу вас исправить эту проблему.Спасибо за понимание!Всех благ вам.Merry Xmas!
     }
 
     void calculateTheResult() {
         int period, action;
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); //О Боги мои!Название переменной просто божественна!Продолжайте в том же духе!
         System.out.println("Введите сумму вклада в рублях:");
         int amount = scanner.nextInt();
         System.out.println("Введите срок вклада в годах:");
@@ -34,6 +36,7 @@ public class DepositCalculator {
         }
         System.out.println("Результат вклада: " + amount + " за " + period + " лет превратятся в " + result);
     }
+    //Мария, вам не кажется,что этим строкам не хватает воздуха?Вот и мне также кажется.Прошу принять меры!Всех благ и благополучия!
 
     public static void main(String[] args) {
         new DepositCalculator().calculateTheResult();
